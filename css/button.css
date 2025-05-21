@@ -1,0 +1,24 @@
+.btn {
+  text-decoration: none;
+  color: var(--background-color);
+  padding: var(--space-150) var(--space-600);
+  border-radius: var(--space-100);
+  background-color: var(--primary-color);
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: hsl(203, 80%, 58%);
+  }
+}
+
+.btn-secondary {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+}
