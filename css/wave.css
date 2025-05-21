@@ -1,6 +1,6 @@
 .wave-text span {
     display: inline-block;
-    animation: wave 3s ease-in-out ;
+    animation: wave 2s ease-in-out ;
 }
 
 .wave-text span:nth-child(1)  { animation-delay: 0s; }
