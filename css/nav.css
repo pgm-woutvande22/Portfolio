@@ -1,4 +1,5 @@
 .nav {
+  max-width: calc(1024px + 16rem);
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.8),
@@ -9,8 +10,8 @@
   box-shadow: var(--box-shadow);
 
   border-radius: var(--space-400);
-  margin: var(--space-200);
   padding: var(--space-200) var(--space-500); 
+  margin: 0 auto;
 
   position: sticky;
   top: var(--space-200);

@@ -27,9 +27,8 @@
   --space-800: 4rem; /* 64px */
   --space-1000: 5rem; /* 80px */
 
-  --primary-color: hsl(203, 86%, 49%);
+  --primary-color: hsl(219, 86%, 49%);
   --secondary-color: hsl(218, 18%, 61%);
   --background-color: hsl(216, 45%, 98%);
-  --nav-background-color: hsla(0, 0%, 100%, 0.7);
   --text-color: hsl(226, 18%, 18%);
 }
