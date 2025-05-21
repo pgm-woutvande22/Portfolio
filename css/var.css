@@ -1,7 +1,7 @@
 :root {
+  --max-width: 1000px;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-
-  //text sizes
   --font-h1: 3rem;
   --font-h2: 2.5rem;
   --font-h3: 2rem;
@@ -11,8 +11,6 @@
   --font-p: 1rem;
   --font-small: 0.875rem;
   --font-xsmall: 0.75rem;
-
-  //spacing
 
   --space-0: 0rem; /* 0px */
   --space-025: 0.125rem; /* 2px */
@@ -30,7 +28,7 @@
   --space-1000: 5rem; /* 80px */
 
   --primary-color: hsl(203, 86%, 49%);
-  --secondquary-color: hsl(218, 18%, 61%);
+  --secondary-color: hsl(218, 18%, 61%);
   --background-color: hsl(216, 45%, 98%);
   --nav-background-color: hsla(0, 0%, 100%, 0.7);
   --text-color: hsl(226, 18%, 18%);
