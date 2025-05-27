@@ -11,7 +11,7 @@
   max-width: 50%;
   display: flex;
   flex-direction: column;
-  gap: var(--space-300);
+  gap: var(--space-100);
 }
 
 .form__group {
@@ -92,6 +92,23 @@
   gap: var(--space-100);
   font-size: var(--font-p);
   color: var(--text-color);
+}
+
+.form__aside-text{
+  display: flex;
+  align-items: center;
+  gap: var(--space-100);
+
+  & a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+      color: var(--primary-color);
+    }
+  }
 }
 
 @media (max-width: 900px) {

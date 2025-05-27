@@ -78,4 +78,6 @@
   padding: var(--space-100);
   width: 2.5rem;
   height: 2.5rem;
+  overflow:visible;
+
 }
