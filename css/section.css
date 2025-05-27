@@ -1,0 +1,21 @@
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: calc(100vh);
+  & .section__title {
+    font-size: var(--font-h2);
+    font-weight: 700;
+    margin-bottom: var(--space-200);
+
+    &::after {
+        content: "";
+        display: block;
+        width: 13rem; /* Adjust as needed */
+        height: 5px;
+        background: var(--primary-color);
+        margin-top: var(--space-0); /* Only space above */
+        border-radius: 2px;
+        margin-left: 0; /* Align to the left */
+    }
+  }
+}
