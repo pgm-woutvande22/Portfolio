@@ -30,5 +30,6 @@
   --primary-color: hsl(219, 86%, 49%);
   --secondary-color: hsl(218, 11%, 52%);
   --background-color: hsl(216, 45%, 98%);
+  --tag-color:hsl(203, 20%, 95%);
   --text-color: hsl(226, 18%, 18%);
 }
