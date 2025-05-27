@@ -58,3 +58,9 @@
   justify-content: center;
   gap: var(--space-800);
 }
+
+.section-botom{
+  height: auto;
+  min-height: 80vh; 
+  padding-bottom: var(--space-600);
+}

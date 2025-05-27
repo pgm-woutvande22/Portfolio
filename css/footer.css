@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--space-400);
+    box-shadow: var(--box-shadow);
+    background-color: var(--light-color);
+
+    & .footer__title{
+        font-weight: 600;
+        color: var(--text-color);
+
+        & span{
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+    }
+}
