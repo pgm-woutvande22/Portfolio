@@ -6,6 +6,7 @@
 @import url("./wave.css");
 @import url("./section.css");
 @import url("./card.css");
+@import url("./form.css");
 * {
   margin: 0;
   padding: 0;

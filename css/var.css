@@ -28,6 +28,7 @@
   --space-1000: 5rem; /* 80px */
 
   --primary-color: hsl(219, 86%, 49%);
+  --light-color: hsla(219, 84%, 90%, 0.873);
   --secondary-color: hsl(218, 11%, 52%);
   --background-color: hsl(216, 45%, 98%);
   --tag-color:hsl(203, 20%, 95%);

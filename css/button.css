@@ -23,3 +23,7 @@
   }
 }
 
+.btn--form{
+  border: none;
+  box-shadow: var(--box-shadow);
+}
