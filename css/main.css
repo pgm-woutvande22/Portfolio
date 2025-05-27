@@ -3,7 +3,7 @@
 @import url("./nav.css");
 @import url("./hero.css");
 @import url("./button.css");
-@import url('./wave.css');
+@import url("./wave.css");
 @import url("./section.css");
 @import url("./card.css");
 * {
@@ -12,7 +12,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -41,4 +42,8 @@ h3 {
 }
 h4 {
   font-size: var(--font-h4);
+}
+
+html {
+  scroll-behavior: smooth;
 }
