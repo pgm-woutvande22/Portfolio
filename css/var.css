@@ -31,6 +31,7 @@
   --light-color: hsla(219, 84%, 90%, 0.873);
   --secondary-color: hsl(218, 11%, 52%);
   --background-color: hsl(216, 45%, 98%);
+  --border-color: hsl(231, 17%, 92%);
   --tag-color:hsl(203, 20%, 95%);
   --text-color: hsl(226, 18%, 18%);
 }
