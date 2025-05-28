@@ -22,11 +22,11 @@
 
   & .detail__features {
     border-radius: 0.5rem;
-    background-color: var(--background-color);
+    background-color: white;
     border: 1px solid var(--border-color);
     box-shadow: var(--box-shadow);
     margin-top: var(--space-1000);
-    padding: var(--space-200) var(--space-400);
+    padding: var(--space-200) var(--space-400) var(--space-200) var(--space-800);
   }
 
   & .detail-features-title {
@@ -62,5 +62,27 @@
     border-radius: var(--space-200);
     font-size: var(--font-xsmall);
     font-weight: 600;
+  }
+}
+
+.detail__links {
+  margin-top: var(--space-400);
+  display: flex;
+
+  & .detail__link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-100);
+    text-decoration: none;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    padding: var(--space-150) var(--space-600);
+    border-radius: var(--space-100);
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color:  hsl(258, 80%, 58%);
+    }
   }
 }
