@@ -1,6 +1,6 @@
 .section--detail {
   max-width: 1200px;
-  padding-top: var(--space-800);
+  padding-top: var(--space-400);
 
   & .detail__content {
     display: flex;
@@ -11,6 +11,13 @@
   & .detail__img {
     box-shadow: var(--box-shadow);
     border-radius: 0.5rem;
+  }
+
+  & .detail__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
   }
 
   & .detail__features {
@@ -38,7 +45,22 @@
     font-size: var(--font-h6);
   }
 
-  & .detail__features-item::marker{
+  & .detail__features-item::marker {
     color: var(--primary-color);
+  }
+
+  & .card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-150);
+  }
+
+  & .card__tag {
+    background-color: var(--tag-color);
+    color: var(--text-color);
+    padding: var(--space-100) var(--space-200);
+    border-radius: var(--space-200);
+    font-size: var(--font-xsmall);
+    font-weight: 600;
   }
 }
