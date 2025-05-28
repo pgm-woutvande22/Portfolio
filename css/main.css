@@ -8,6 +8,7 @@
 @import url("./card.css");
 @import url("./form.css");
 @import url("./footer.css");
+@import url("./detail.css");
 * {
   margin: 0;
   padding: 0;
