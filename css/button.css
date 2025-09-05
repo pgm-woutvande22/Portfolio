@@ -79,17 +79,18 @@
 @media (max-width: 900px) {
   .btn,
   .btn-secondary {
-    padding: var(--space-125) var(--space-400);
-    font-size: clamp(0.95rem, 2.2vw, var(--font-p));
+    padding: var(--space-100) var(--space-300);
+    font-size: 0.95rem;
+    border-radius: var(--space-75);
   }
 
-  /* common pattern: form submit/stretch buttons should fill available width on smaller screens */
   .btn--form {
     width: 100%;
-    padding: var(--space-125) var(--space-200);
+    padding: var(--space-100);
     justify-content: center;
     max-width: none;
-    font-size: 1rem;
+    font-size: 0.98rem;
+    border-radius: var(--space-75);
   }
 }
 
