@@ -43,6 +43,19 @@
   box-sizing: border-box;
 }
 
+.form__input{
+  padding: var(--space-150) var(--space-200);
+  border: 1px solid #e3e8ee;
+  border-radius: var(--space-100);
+  background: #fff;
+  font-size: var(--font-p);
+  margin-top: var(--space-050);
+  color: var(--text-color);
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .form__text {
   min-height: 120px;
 }
