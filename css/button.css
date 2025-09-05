@@ -31,9 +31,48 @@
   }
 }
 
-.btn--form{
+.btn--form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 34rem; /* keep the button from getting too wide on large forms */
+  padding: calc(var(--space-150) + 2px) var(--space-600);
   border: none;
-  box-shadow: var(--box-shadow);
+  border-radius: var(--space-100);
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-weight: 800;
+  font-size: 1rem;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08), 0 2px 6px rgba(16, 24, 40, 0.04);
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 200ms ease, background-color 150ms ease, opacity 150ms ease;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(16, 24, 40, 0.12);
+    background-color: hsl(258, 80%, 58%);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(88, 64, 255, 0.14);
+    outline-offset: 3px;
+  }
+
+  &.disabled,
+  &[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 /* Responsive: reduce padding, scale fonts and allow full-width form buttons */
@@ -49,6 +88,8 @@
     width: 100%;
     padding: var(--space-125) var(--space-200);
     justify-content: center;
+    max-width: none;
+    font-size: 1rem;
   }
 }
 
@@ -62,5 +103,7 @@
 
   .btn--form {
     padding: var(--space-100);
+    font-size: 0.98rem;
+    border-radius: calc(var(--space-75));
   }
 }
