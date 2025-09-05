@@ -17,3 +17,40 @@
         }
     }
 }
+
+/* Responsive footer */
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-200);
+    padding: var(--space-300);
+    text-align: center;
+  }
+
+  .footer__title {
+    font-size: clamp(1rem, 2.2vw, var(--font-h5));
+    margin-bottom: var(--space-100);
+  }
+
+  .footer__text {
+    font-size: var(--font-p);
+    color: var(--text-color-secondary);
+  }
+}
+
+@media (max-width: 420px) {
+  .footer {
+    padding: var(--space-200);
+    gap: var(--space-150);
+  }
+
+  .footer__title {
+    font-size: clamp(0.9rem, 3.5vw, 1.05rem);
+  }
+
+  .footer__text {
+    font-size: 0.9rem;
+  }
+}

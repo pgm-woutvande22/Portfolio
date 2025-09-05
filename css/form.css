@@ -29,7 +29,7 @@
   margin-bottom: var(--space-100);
 }
 
-.from__input,
+.form__input,
 .form__text {
   padding: var(--space-150) var(--space-200);
   border: 1px solid #e3e8ee;
@@ -39,6 +39,8 @@
   margin-top: var(--space-050);
   color: var(--text-color);
   resize: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form__text {
@@ -50,6 +52,8 @@
   margin-top: var(--space-200);
   font-size: var(--font-p);
   font-weight: 600;
+  padding: var(--space-125) var(--space-200);
+  border-radius: var(--space-100);
 }
 
 .form__aside {
@@ -111,13 +115,94 @@
   }
 }
 
+/* Responsive adjustments for tablets and phones */
 @media (max-width: 900px) {
   .form__container {
     flex-direction: column;
+    gap: var(--space-300);
   }
+
   .form,
   .form__aside {
     max-width: 100%;
     width: 100%;
+  }
+
+  .form__group {
+    flex-direction: column;
+    gap: var(--space-100);
+  }
+
+  .form__label {
+    margin-bottom: var(--space-050);
+  }
+
+  .form__input,
+  .form__text {
+    padding: var(--space-125) var(--space-150);
+  }
+
+  .form__text {
+    min-height: 140px;
+  }
+
+  .btn--form {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .form__aside {
+    padding: var(--space-400) var(--space-300);
+  }
+
+  .form__aside-title {
+    font-size: clamp(1.1rem, 3.5vw, var(--font-h4));
+  }
+
+  .form__contact-list {
+    gap: var(--space-75);
+  }
+}
+
+@media (max-width: 420px) {
+  .form__container {
+    gap: var(--space-200);
+    padding: 0 var(--space-150);
+  }
+
+  .form {
+    gap: var(--space-75);
+  }
+
+  .form__group {
+    gap: var(--space-75);
+  }
+
+  .form__input,
+  .form__text {
+    padding: var(--space-100) var(--space-125);
+    font-size: 0.95rem;
+  }
+
+  .form__text {
+    min-height: 110px;
+  }
+
+  .btn--form {
+    padding: var(--space-100);
+    font-size: 0.95rem;
+    align-self: stretch;
+  }
+
+  .form__aside {
+    padding: var(--space-300) var(--space-200);
+  }
+
+  .form__aside-title {
+    font-size: clamp(1rem, 3vw, var(--font-h4));
+  }
+
+  .form__contact-list {
+    gap: var(--space-50);
   }
 }

@@ -10,6 +10,14 @@
   &:hover {
     background-color: hsl(258, 80%, 58%);
   }
+
+  /* base alignment + spacing for icon + text buttons */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-100);
+  font-weight: 700;
+  font-size: var(--font-p);
 }
 
 .btn-secondary {
@@ -26,4 +34,33 @@
 .btn--form{
   border: none;
   box-shadow: var(--box-shadow);
+}
+
+/* Responsive: reduce padding, scale fonts and allow full-width form buttons */
+@media (max-width: 900px) {
+  .btn,
+  .btn-secondary {
+    padding: var(--space-125) var(--space-400);
+    font-size: clamp(0.95rem, 2.2vw, var(--font-p));
+  }
+
+  /* common pattern: form submit/stretch buttons should fill available width on smaller screens */
+  .btn--form {
+    width: 100%;
+    padding: var(--space-125) var(--space-200);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .btn,
+  .btn-secondary {
+    padding: var(--space-100) var(--space-300);
+    font-size: 0.95rem;
+    border-radius: var(--space-75);
+  }
+
+  .btn--form {
+    padding: var(--space-100);
+  }
 }
